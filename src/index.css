@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+button {
+  background-color:#40A9F8;
+  border:2px solid black;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  cursor:pointer;
+}
+button:hover {
+  background-color:#0A5994;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  color:white;
+}
+input, textarea, button, p, div, section, article, select {
+  display: block;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0.5em;
+}
+
+.done {
+  text-decoration: line-through;
+}
+li {
+  list-style: none;
+}
+.deleteAndCheck {
+  display:flex;
+}
+.deleteAndCheck button{
+width: 90%;
+}
+.deleteAndCheck input{
+width:10%;
+height:2em;
+cursor:pointer;
+}
