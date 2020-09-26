@@ -75,15 +75,13 @@ const App = () => {
         </label>
         <label>Score: {score}</label> <br />
         <label htmlFor="newTodo">Enter Todo</label>
-        <div>
-          <input
-            id="newTodo"
-            name="newTodo"
-            value={newTodo}
-            onChange={onNewTodoChange}
-          />
-          <button onClick={() => setScore(score + 1)}>Add Todo</button>
-        </div>
+        <input
+          id="newTodo"
+          name="newTodo"
+          value={newTodo}
+          onChange={onNewTodoChange}
+        />
+        <button onClick={() => setScore(score + 1)}>Add Todo</button>
         <button onClick={markAll}>Mark All</button>
         <button onClick={unmarkAll}>Unmark All</button>
       </form>
