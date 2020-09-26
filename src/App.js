@@ -22,10 +22,6 @@ const App = () => {
     setNewTodo('');
   }, [newTodo, todos]);
 
-  useEffect(() => {
-    console.log('todos', todos);
-  }, [todos]);
-
   const addTodo = useCallback((todo, index) => (event) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1, {
@@ -79,13 +75,15 @@ const App = () => {
         </label>
         <label>Score: {score}</label> <br />
         <label htmlFor="newTodo">Enter Todo</label>
-        <input
-          id="newTodo"
-          name="newTodo"
-          value={newTodo}
-          onChange={onNewTodoChange}
-        />
-        <button onClick={() => setScore(score + 1)}>Add Todo</button>
+        <div>
+          <input
+            id="newTodo"
+            name="newTodo"
+            value={newTodo}
+            onChange={onNewTodoChange}
+          />
+          <button onClick={() => setScore(score + 1)}>Add Todo</button>
+        </div>
         <button onClick={markAll}>Mark All</button>
         <button onClick={unmarkAll}>Unmark All</button>
       </form>
